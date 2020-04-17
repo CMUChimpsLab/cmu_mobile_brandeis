@@ -5,7 +5,7 @@ This repository houses Carnegie Mellon University's contributions to the DARPA B
 The repo contains the following projects:
 - Policy manager: The policy manager gives users fine-grained controls to configure privacy settings based on purposes and third-party libraries.
 
-- Coconut (PE for Android enabled): Coconut is an Android Studio plugin, which annotates instances of sensitive data access and egress. In the PE for Android version, it also generates an app policy file, which is used by the policy manager to provide privacy controls to users. Coconut is an original work by Tianshi Li (https://tianshili.me).
+- Coconut (PE for Android enabled): Coconut is an Android Studio plugin, which annotates instances of sensitive data access and egress. Those annotations can then be used to generate a privacy policy for users. In the PE for Android version, it also generates an app policy file, which is used by the policy manager to provide privacy controls to users. Coconut is an original work by Tianshi Li (https://tianshili.me).
 
     “Coconut: An IDE Plugin for Developing Privacy-Friendly Apps”. Tianshi Li, Yuvraj Agarwal, Jason I. Hong. In Proceedings of the ACM on     Interactive, Mobile, Wearable and Ubiquitous Technologies, Volume 2 Issue 4, December 2018.
 
