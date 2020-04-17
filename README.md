@@ -1,6 +1,6 @@
 # Carnegie Mellon University - DARPA Brandeis Mobile Repository
 
-This repository houses Carnegie Mellon University's contributions to the DARPA Brandeis Mobile research team.
+This repository houses Carnegie Mellon University's contributions to the DARPA Brandeis mobile research team.
 
 The repo contains the following projects:
 - Policy manager: The policy manager gives users fine-grained controls to configure privacy settings based on purposes and third-party libraries.
