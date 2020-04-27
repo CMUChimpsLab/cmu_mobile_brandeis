@@ -19,6 +19,8 @@ The repo contains the following projects:
 
 **Engineers**: Mike Czapik, Swarup Sahoo, Shawn Hanna
 
-**UI/UX Designers**: Judy Chun, Rituparna Roychoudhury, Shan Wang, Jessica Zhao, Ally Liu, Qian Wang, Rudy Iyer, Won-Woo Chung, Siqi Wang, Sam Kim, Jinping Liu, Shen Lu, Vida Zhang
+**UI/UX Researchers**: Judy Chun
+
+**UI/UX Designers**: Rituparna Roychoudhury, Shan Wang, Jessica Zhao, Ally Liu, Qian Wang, Rudy Iyer, Won-Woo Chung, Siqi Wang, Sam Kim, Jinping Liu, Shen Lu, Vida Zhang
 
 **PhD Students**: Haojian Jin (http://haojianj.in/), Tianshi Li (https://tianshili.me)
