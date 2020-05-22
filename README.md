@@ -24,3 +24,5 @@ The repo contains the following projects:
 **UI/UX Designers**: Rituparna Roychoudhury, Shan Wang, Jessica Zhao, Ally Liu, Qian Wang, Rudy Iyer, Won-Woo Chung, Siqi Wang, Sam Kim, Jinping Liu, Shen Lu, Vida Zhang
 
 **PhD Students**: Haojian Jin (http://haojianj.in/), Tianshi Li (https://tianshili.me)
+
+**Undergraduate Students**: Yile Liu, Yuan Jiang
