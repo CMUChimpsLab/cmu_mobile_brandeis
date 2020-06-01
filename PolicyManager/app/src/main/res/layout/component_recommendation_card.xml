@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="3dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="3dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F3F3F3">
+            <TextView
+                android:id="@+id/recommendation_card_title"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/dark_gray"
+                android:textSize="18sp"
+                tools:text="Yelp used your approximate location for advertisement"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/recommendation_card_permission_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/dark_gray"
+            tools:text="Records your neighborhood-level-accurate location to deliver relevant ads."/>
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            style="@style/divider"/>
+        <TextView
+            android:id="@+id/recommendation_card_suggested_policy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:textColor="#000000"
+            tools:text="Consider turning off approximate location used for advertisement."/>
+        <TextView
+            android:id="@+id/recommendation_card_policy_origin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/dark_gray"
+            tools:text="Because you turned it off for most other apps."/>
+        <TextView
+            android:id="@+id/recommendation_card_policy_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/light_blue"
+            tools:text="Turn Off"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

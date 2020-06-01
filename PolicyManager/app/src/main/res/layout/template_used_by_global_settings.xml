@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+    <ImageView
+        android:id="@+id/global_setting_usedby_app_icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:visibility="invisible"
+        tools:src="@drawable/android"/>
+    <TextView
+        android:id="@+id/global_setting_usedby_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/global_setting_usedby_app_icon"
+        style="@style/text_dark"
+        tools:text="Android Test App"/>
+    <View
+        android:id="@+id/used_by_divider"
+        android:layout_below="@id/global_setting_usedby_title"
+        android:layout_marginTop="25dp"
+        android:visibility="gone"
+        style="@style/divider_thin"/>
+    <edu.cmu.policymanager.ui.common.ConfigureSwitch
+        android:id="@+id/used_by_configure_switch"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"/>
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:drawableStart="@drawable/ic_settings_blue_24dp"
+        android:text="@string/allysiqi_notification_title"
+        style="@style/subtext_dark"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/allysiqi_notification_spy_warning_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_warning_red_24dp"/>
+        <TextView
+            android:id="@+id/allysiqi_notification_spy_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="2dp"
+            android:layout_toEndOf="@id/allysiqi_notification_spy_warning_icon"
+            android:text="@string/allysiqi_notification_spy_title"
+            style="@style/text_dark"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/allysiqi_notification_spy_title"
+            android:layout_alignStart="@id/allysiqi_notification_spy_title"
+            android:text="@string/allysiqi_notification_spy_description"
+            style="@style/subtext_dark"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e8e8e8">
+        <Button
+            android:id="@+id/allysiqi_notification_spy_view_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:textColor="#438bf7"
+            android:text="@string/allysiqi_notification_view_spy"/>
+    </LinearLayout>
+</LinearLayout>

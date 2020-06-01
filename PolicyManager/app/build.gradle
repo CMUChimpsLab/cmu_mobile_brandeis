@@ -1,0 +1,83 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 'Two Six Labs:PE for Android:28'
+    signingConfigs {
+        PEA_config {
+            keyAlias 'pal'
+            keyPassword 'android'
+            storeFile file('C:\\Users\\CHIMPS LAB\\Music\\Downloads\\PALstore.keystore')
+            storePassword 'android'
+        }
+    }
+    defaultConfig {
+        applicationId "edu.cmu.policymanager_new"
+        minSdkVersion 28
+        targetSdkVersion 28
+        multiDexEnabled true
+        versionCode 6
+        versionName "6.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.PEA_config
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            useProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.PEA_config
+        }
+        debug {
+            signingConfig signingConfigs.PEA_config
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:3.0.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    androidTestImplementation ('com.android.support.test:runner:1.0.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    androidTestImplementation ('com.android.support.test:rules:1.0.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testImplementation 'junit:junit:4.12'
+
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.7.1'
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.7.1'
+    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.7.1'
+    implementation 'com.google.code.gson:gson:2.8.2'
+
+    implementation 'com.google.zxing:core:3.4.0'
+    implementation ('com.journeyapps:zxing-android-embedded:4.0.2') { transitive = false }
+
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel:2.2.0'
+    implementation 'androidx.annotation:annotation:1.1.0'
+    implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.0.0'
+
+    implementation 'androidx.room:room-common:2.2.4'
+    annotationProcessor 'androidx.room:room-compiler:2.2.4'
+    implementation 'androidx.room:room-guava:2.2.4'
+    implementation 'androidx.room:room-migration:2.2.4'
+    implementation 'androidx.room:room-runtime:2.2.4'
+    implementation 'androidx.sqlite:sqlite:2.1.0'
+
+    /* Really weird, but I have to do it this way. See:
+    * https://stackoverflow.com/questions/50193885/failed-to-resolve-com-google-android-materialmaterial1-0-0-alpha1
+    *  */
+    implementation group: 'com.google.android.material', name: 'material', version:'1.1.0-rc02'
+}

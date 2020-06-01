@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/policy_manager_background">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/header_blue">
+        <ImageView
+            android:id="@+id/library_settings_back_button"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="5dp"
+            android:onClick="goBack"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_arrow_back_white_24dp"/>
+        <RelativeLayout
+            android:id="@+id/library_settings_header_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/library_settings_back_button"
+            android:layout_toEndOf="@id/library_settings_back_button">
+            <ImageView
+                android:id="@+id/library_settings_permission_icon"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginEnd="10dp"
+                tools:src="@drawable/ic_location_white_24dp"/>
+            <TextView
+                android:id="@+id/library_settings_permission_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/library_settings_permission_icon"
+                android:layout_alignTop="@id/library_settings_permission_icon"
+                android:layout_marginEnd="10dp"
+                android:textSize="24sp"
+                android:textColor="#FFFFFF"
+                tools:text="Coarse Location"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/library_settings_permission_description"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/library_settings_header_container"
+            android:layout_alignStart="@id/library_settings_header_container"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#FFFFFF"
+            tools:text="Coarse location records your neighborhood-level location"/>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/library_settings_purpose_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                style="@style/app_setting_title"
+                tools:text="For Advertisement"/>
+            <TextView
+                android:id="@+id/library_settings_purpose_description"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/library_settings_purpose_title"
+                android:layout_alignStart="@id/library_settings_purpose_title"
+                style="@style/description"
+                tools:text="Third parties deliver ads relevant to your interest based on location"/>
+            <edu.cmu.policymanager.ui.common.ConfigureSwitch
+                android:id="@+id/library_settings_master_switch"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:layout_alignParentEnd="true"/>
+
+            <View
+                android:id="@+id/library_settings_divider"
+                android:layout_below="@id/library_settings_purpose_description"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                style="@style/divider"/>
+
+            <LinearLayout
+                android:id="@+id/library_settings_control_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/library_settings_divider"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"/>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

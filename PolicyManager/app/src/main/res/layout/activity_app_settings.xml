@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/policy_manager_background">
+
+    <include layout="@layout/common_action_bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8">
+        <RelativeLayout
+            android:id="@+id/app_settings_app_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp">
+            <ImageView
+                android:id="@+id/app_settings_app_icon"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_marginEnd="12dp"
+                tools:src="@drawable/android"/>
+            <TextView
+                android:id="@+id/app_settings_app_name"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/app_settings_app_icon"
+                android:layout_alignTop="@id/app_settings_app_icon"
+                android:layout_marginBottom="5dp"
+                android:textSize="18sp"
+                android:textColor="#3F3F3F"
+                tools:text="The Weather Channel" />
+
+            <TextView
+                android:id="@+id/app_settings_app_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/app_settings_app_icon"
+                android:layout_below="@id/app_settings_app_name"
+                android:text="@string/install_desc"
+                android:textColor="@color/title_grey"/>
+
+            <TextView
+                android:id="@+id/app_settings_app_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@id/app_settings_app_name"
+                android:layout_marginBottom="10dp"
+                style="@style/description"
+                tools:text="Travel and Local App"/>
+
+            <TextView
+                android:id="@+id/install_ui_policy_setting_explanation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/app_settings_app_icon"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/install_ui_policy_setting_explanation"
+                android:visibility="gone"
+                style="@style/app_setting_title"/>
+
+            <TextView
+                android:id="@+id/app_settings_internal_use_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="18dp"
+                android:layout_below="@id/install_ui_policy_setting_explanation"
+                android:text="@string/app_internal_use"
+                style="@style/app_setting_title"/>
+            <TextView
+                android:id="@+id/app_settings_internal_use_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_below="@id/app_settings_internal_use_title"
+                style="@style/description"
+                tools:text="@string/internal_use_description_facebook"/>
+
+            <LinearLayout
+                android:id="@+id/app_settings_internal_use_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/app_settings_internal_use_description"
+                android:orientation="vertical"/>
+            <TextView
+                android:id="@+id/app_settings_third_party_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@id/app_settings_internal_use_container"
+                android:text="@string/third_party_use"
+                style="@style/app_setting_title"/>
+            <TextView
+                android:id="@+id/app_settings_third_party_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_below="@id/app_settings_third_party_title"
+                android:text="@string/third_party_use_description"
+                style="@style/description"/>
+            <LinearLayout
+                android:id="@+id/app_settings_third_party_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:layout_below="@id/app_settings_third_party_description"
+                android:orientation="vertical"/>
+        </RelativeLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/install_ui_finish_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="@drawable/footer"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@color/light_blue"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="15dp"
+            android:onClick="finishInstall"
+            android:text="@string/finish_caps"/>
+    </RelativeLayout>
+</LinearLayout>

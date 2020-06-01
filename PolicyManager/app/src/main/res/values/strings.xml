@@ -1,0 +1,338 @@
+<resources>
+    <string name="app_name">Brandeis Privacy Manager</string>
+    <string name="save_to_policy_toggle">Save this decision</string>
+
+    <string name="apply">Apply</string>
+    <string name="cancel">Cancel</string>
+    <string name="cancel_caps">CANCEL</string>
+    <string name="request_caps">REQUEST</string>
+    <string name="activate_caps">ACTIVATE</string>
+
+    <string name="yes_caps">YES</string>
+    <string name="no_caps">NO</string>
+
+    <string name="global_setting_privacy_mode">Current Privacy Mode: @profile</string>
+
+    <string name="notification_main_text">
+        Details on policy enforcement will appear here as you use apps on your phone.
+    </string>
+
+    <string name="sensitive_data_access_feed">
+        Sensitive Data Access Feed
+    </string>
+
+    <string name="no_data_access_card_title">
+        No Known Data Accesses For %s
+    </string>
+
+    <string name="no_data_access_card_description_internal">
+        %s does not appear to access any sensitive data for its own internal use.
+    </string>
+
+    <string name="no_data_access_card_description_library">
+        %s does not appear to contain any third-party software that accesses sensitive data.
+    </string>
+
+    <string name="no_global_data_access_card_description">
+        No apps on this device currently seem to request %s.
+    </string>
+
+    <string name="error_card_title">Unexpected Error</string>
+
+    <string name="error_card_description">
+        The policy manager is currently unable to display the privacy controls for this app.
+    </string>
+
+    <string name="install_ui_policy_setting_explanation">
+        Settings may be overrode by a policy profile or global setting.
+    </string>
+
+    <!-- Install UI -->
+    <string name="install_desc">Requests access to the following information</string>
+    <string name="app_internal_use">App Internal Use</string>
+    <string name="third_party_use">Third Party Use</string>
+    <string name="internal_use_description">
+        Data collected will be used in %s app and can be sent to %s servers.
+    </string>
+    <string name="internal_use_description_facebook">
+        Data collected will be used in Facebook app and can be sent to Facebook servers.
+    </string>
+    <string name="third_party_use_description">
+        Data collected will likely be sent to other third parties outside of your device.
+    </string>
+
+    <string name="no_apps_installed">
+        You currently do not have any non-system\napps installed on your device.
+    </string>
+
+    <string name="continue_caps">CONTINUE</string>
+
+    <string name="privacy_manager">Privacy Manager</string>
+
+    <string name="app_settings">App Settings</string>
+
+    <string name="finish_caps">FINISH</string>
+
+    <string name="filter_does_not_match">
+        No non-system apps were found using this filter.
+    </string>
+
+    <string name="no_common_permissions">
+        The app does not request any common permissions for this category
+    </string>
+    <string name="no_uncommon_permissions">
+        The app does not request any uncommon permissions for this category
+    </string>
+
+    <string name="policy_profile_setting_for_global">Set "Off" by %s</string>
+
+    <string name="activate_policy_profile_title">Activate %s mode?</string>
+    <string name="activate_policy_profile_body">
+        You are about to activate a policy profile, which will override some of your existing
+        settings. Are you sure you want to enable?
+    </string>
+
+    <string name="request_deactivate_profile_title">Request to deactivate %s mode?</string>
+    <string name="request_deactivate_profile_body">
+        You need to deactivate %s mode before turning on another. Request approval from your
+        administrator now.
+    </string>
+
+    <!-- Configure UI -->
+    <string name="most_used">Most Used Apps</string>
+    <string name="most_used_description">Top 10 Apps you use most frequently</string>
+
+    <string name="recently_installed">Recently Installed Apps</string>
+    <string name="recently_installed_description">Apps installed in the past 30 days</string>
+
+    <string name="privacy_overview">Privacy Overview</string>
+    <string name="privacy_overview_description">Your data privacy access this month.</string>
+    <string name="warning_something_is_wrong">Something is wrong here!</string>
+    <string name="only_this_time">Only this time</string>
+    <string name="apps_hiding_data_access">
+        Apps will sometimes send your personal information to third parties without telling you.
+    </string>
+    <string name="warning_inconsistent_body_library">
+        The %s app is allowing %s to access your %s for %s, but told you it was for %s.
+    </string>
+    <string name="warning_inconsistent_body">
+        The %s app is allowing access your %s for %s, but told you it was for %s.
+    </string>
+    <string name="warning_no_specified_purpose">
+        The app has not specified any purposes for accessing %s, but we determined it is being
+        used for %s by %s
+    </string>
+    <string name="allow">ALLOW</string>
+    <string name="deny">DENY</string>
+    <string name="always_allow">Always allow</string>
+    <string name="always_deny">Always deny</string>
+    <string name="global_settings">Global Settings</string>
+    <string name="using">Using</string>
+    <string name="more">MORE</string>
+    <string name="less">LESS</string>
+    <string name="open">OPEN</string>
+    <string name="For">For</string>
+    <string name="Used_by">Used by:</string>
+    <string name="more_information">More Information</string>
+    <string name="Something_is_wrong_here">Something is wrong here!</string>
+
+    <string name="because_colon">Because:</string>
+
+    <string name="activity_global_setting_description">
+        Allows you to configure permissions for all apps or by purposes.
+    </string>
+
+    <string name="configure_all_apps">Configure All Apps</string>
+    <string name="configure_all_description">
+        Set permission for all apps requesting %s at once.
+    </string>
+    <string name="configure_based_on_purpose">Configure Based on Purposes</string>
+    <string name="configure_based_on_purpose_description">
+        Set permissions for apps requesting %s based on specific purposes.
+    </string>
+
+    <string name="warning_inconsistent_purpose_more_info">
+        Apps will sometimes send your personal information to third parties without telling you.
+    </string>
+    <string name="warning_unable_to_analyze">
+        Warning! - Unable to determine purpose of data access!
+    </string>
+    <string name="warning_unable_to_analyze_description">
+        The app may have masked itself from our analysis, PE Android may not yet support this
+        operation or there is some problem with the app.
+    </string>
+    <string name="warning_deny_recommendation">It is recommended that you deny this access.</string>
+    <string name="warning_unable_to_analyze_body">
+        PE Android is unable to determine why @app is accessing @permission, which could be
+        dangerous. Please choose an action.
+    </string>
+    <string name="uninstall">UNINSTALL</string>
+    <string name="it_will_be_used_for">It will be used for:</string>
+    <string name="it_will_be_used_by">It will be used by:</string>
+    <string name="notification_body">%s is set to %s in %s</string>
+    <string name="notification_title">%s access %s - %s</string>
+    <string name="show_more">Show More</string>
+    <string name="notification_button">Open /@policySource</string>
+    <string name="all_permission_settings">All @permission Settings</string>
+    <string name="hide_details">Hide Details</string>
+    <string name="global_setting_description">
+        "Manage privacy settings across all apps.
+    </string>
+    <string name="app_settings_description">Manage privacy settings of individual apps.</string>
+    <string name="view_all_settings">View All Settings</string>
+    <string name="see_all_tips">See All Tips</string>
+    <string name="view_all_apps">View All Apps</string>
+    <string name="view_details">View Details</string>
+    <string name="view_all">View All</string>
+    <string name="view">View</string>
+    <string name="used_by_caps">USED BY</string>
+    <string name="policy_profile_off">OFF</string>
+    <string name="policy_profile_global_settings">Global settings</string>
+    <string name="policy_profile_app_settings">App settings</string>
+    <string name="none_available">None Available</string>
+    <string name="used_by_camelcase">Used By</string>
+    <string name="used_for_camelcase">Used For</string>
+    <string name="all_permissions">All Permissions</string>
+    <string name="all_permissions_desc">
+        Configure all permissions to @permission used for @purpose at once.
+    </string>
+    <string name="configure_all_third_parties">Configure All Third Parties</string>
+    <string name="configure_all_third_parties_description">
+        Set permissions for all third parties requesting %s for %s
+    </string>
+    <string name="configure_third_parties_individually">
+        Configure Third Parties Individually
+    </string>
+    <string name="configure_third_parties_individually_description">
+        Set permissions for third parties requesting %s for %s based on specific third party.
+    </string>
+    <string name="permissions_used_by">Permissions Used By:</string>
+    <string name="permissions_used_by_desc">
+        Configure individual permissions for @permission by\npurpose:
+    </string>
+    <string name="advanced">ADVANCED</string>
+    <string name="policy_profile_setting_message">Set "@setting" by @profile</string>
+    <string name="advertising_libraries">Advertising Libraries</string>
+    <string name="social_media_libraries">Social Media Libraries</string>
+    <string name="homescreen_privacy_mode_template">You are currently under @mode mode.</string>
+    <string name="data_viewed_this_week">Your data accessed this week</string>
+    <string name="apps_by_category">Apps installed on your phone sorted by category.</string>
+    <string name="tips_description">Learn more about how to protect your privacy</string>
+    <string name="menu_option_profile">Privacy Profiles</string>
+    <string name="profile_ui_tab_personal">Personal</string>
+    <string name="profile_ui_tab_work">Work</string>
+
+    <string name="other_apps">Other Apps</string>
+
+    <string name="homescreen_app_settings">App Settings</string>
+    <string name="homescreen_recommendations">Recommendations</string>
+    <string name="homescreen_recommendations_description">
+        Learn more about how to protect your privacy.
+    </string>
+
+    <string name="homescreen_recommendation_card_policy_template">
+        <b>%s</b> for all %s
+    </string>
+
+    <string name="recommendation_title">Tips</string>
+    <string name="recommendation_description">
+        Tips based on your configured privacy settings.
+    </string>
+
+    <string name="no_profiles">
+        You currently do not have any profiles
+    </string>
+
+    <string name="add_new_organizational_profile">Add a new organizational profile</string>
+
+    <string name="scan_profile_qr_code">Scan Profile QR Code</string>
+    <string name="scan_profile_qr_code_desc">
+        You can add a new organizational profile by scanning any QR code. We will provide
+        you with a pre-configured sample profile to use.
+    </string>
+    <string name="scan_qr_code">Scan QR Code</string>
+    <string name="preview_organizational_profile">Preview Organizational Profile</string>
+    <string name="preview_organizational_profile_description">
+        Preview the pre-configured settings in this organizational profile, which will take
+        effect upon being added. If you would like to add and activate the profile, press
+        the add button at the bottom of the next screen.
+    </string>
+    <string name="preview_caps">PREVIEW</string>
+
+    <string-array name="apps_filter_array">
+        <item>All Apps</item>
+        <item>Recently Installed Apps</item>
+    </string-array>
+
+    <string name="organizational_profile">Organizational Profile</string>
+
+    <string name="no_profile_app_settings">
+        This profile does not have any pre-configured settings for specific apps.
+    </string>
+
+    <string name="approximate_location_description">
+        Uses WiFi or mobile cell data (or both) to determine the device\'s location.
+    </string>
+
+    <string name="read_calendar_description">
+        This app can read all calendar events stored on your phone and
+        share or save your calendar data
+    </string>
+
+    <string name="what_are_privacy_profiles">
+        Privacy profiles are permissions that are pre-set by an organization. You can
+        apply a mode to your device, which will override any relevant settings you currently have.
+    </string>
+
+    <string name="privacy_profile_add_description">
+        After adding a new profile, it will be activated. This means the organization\'s privacy
+        settings will be enforced until the profile is turned off.
+    </string>
+
+    <string name="add">Add</string>
+    <string name="add_profile">Add Profile</string>
+    <string name="policy_profiles">Policy Profiles</string>
+
+    <string name="allysiqi_navigation_app_settings">App Settings</string>
+    <string name="allysiqi_navigation_privacy_manager">Privacy Manager</string>
+    <string name="allysiqi_accessed_by">Accessed by</string>
+
+    <string name="apps">Apps</string>
+
+    <string name="peandroid_app">PE for Android App</string>
+    <string name="android_app">Android App</string>
+
+    <string name="allysiqi_activity_spy_title">Possible Spy Apps</string>
+    <string name="allysiqi_activity_spy_description">
+        The following apps have frequent unauthorized accesses and are sharing your data.
+        They might be invisible in your home screen.
+    </string>
+    <string name="allysiqi_its_fine">It\'s fine</string>
+
+    <string name="location_for_advertising">
+        Third parties deliver ads relevant to your interest based on your location.
+    </string>
+
+
+    <string name="no_permission_internally">
+        This app does not request any personal data that is used internally.
+    </string>
+
+    <string name="no_permission_third_party">
+        This app does not seem to share personal data with any third parties.
+    </string>
+
+    <string name="library_settings_for_purpose">For %s</string>
+
+    <string name="allysiqi_spy_name_text">@name has accessed/shared your data</string>
+
+    <!-- Notification service -->
+    <string name="allysiqi_notification_title">Privacy Manager</string>
+    <string name="allysiqi_notification_description">
+        Recent access to @permission is @action by settings in privacy manager.
+    </string>
+    <string name="allysiqi_notification_button_text">Open %s</string>
+    <string name="allysiqi_notification_view_spy">View More</string>
+    <string name="allysiqi_notification_spy_title">Possible Spy App Detected</string>
+    <string name="allysiqi_notification_spy_description">Your phone may be being spied on</string>
+</resources>

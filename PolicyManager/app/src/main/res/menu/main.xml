@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item>
+            <menu android:checkableBehavior="single">
+                <group android:id="@+id/common_menu_options">
+                    <item
+                        android:id="@+id/common_ui_profiles"
+                        android:checkable="true"
+                        android:icon="@drawable/ic_manager_icon_24dp"
+                        android:title="@string/menu_option_profile"/>
+                </group>
+                <group android:id="@+id/common_ui_selector">
+                    <item
+                        android:id="@+id/common_ui_allysiqi"
+                        android:checkable="true"
+                        android:icon="@drawable/ic_home_black_24dp"
+                        android:title="Home Screen"/>
+                </group>
+            </menu>
+        </item>
+    </group>
+</menu>

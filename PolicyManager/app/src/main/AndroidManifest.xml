@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="edu.cmu.policymanager">
+
+    <!-- needed for alert -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <!-- For writing the log file to the feedback email. Storage Permission is required -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
+    <uses-sdk tools:overrideLibrary="com.google.zxing.client.android" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:name=".application.PolicyManagerApplication"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <uses-library android:name="com.twosixlabs.peandroid.privacymanager" />
+
+        <receiver android:name=".broadcastreceivers.PackageChangeBroadcastReceiver">
+            <intent-filter android:priority="100">
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.PACKAGE_FULLY_REMOVED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".ui.configure.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".ui.notification.PolicyManagerNotificationService"
+            android:icon="@drawable/ic_settings_white_24dp"/>
+
+        <activity android:name=".ui.runtime.RuntimeUI"/>
+        <activity android:name=".ui.configure.ActivityAppSettings"/>
+        <activity android:name=".ui.configure.ActivityAllApps"/>
+        <activity android:name=".ui.phonespies.SpyingAppActivity"/>
+        <activity android:name=".ui.configure.globalsettings.ActivityGlobalSettings"/>
+        <activity android:name=".ui.configure.profiles.ActivityPolicyProfileMain"/>
+        <activity android:name=".ui.configure.profiles.add.ActivityAddProfileStepOne"/>
+        <activity android:name=".ui.configure.profiles.add.ActivityAddProfileStepTwo"/>
+        <activity android:name=".ui.configure.profiles.add.ActivityAddProfileStepThree"/>
+        <activity android:name=".ui.configure.profiles.add.ActivityAddProfileStepFour"/>
+        <activity android:name=".ui.configure.profiles.add.ActivityAddProfileStepFive"/>
+        <activity android:name=".ui.configure.profiles.add.ActivityPolicyProfilePreview"/>
+        <activity android:name=".ui.configure.ActivityLibrarySettings"/>
+        <activity android:name=".ui.configure.globalsettings.ActivityGlobalConfigurePurpose"/>
+        <activity android:name=".ui.configure.globalsettings.ActivityGlobalConfigureLibraries"/>
+
+        <service
+            android:name=".PolicyManager.CMUPolicyManagerService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.POLICY_MANAGER_SERVICE">
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_POLICY_MANAGER_START" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

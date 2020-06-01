@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/permission_group_container_icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        tools:src="@drawable/ic_permission_location"/>
+    <TextView
+        android:id="@+id/permission_group_container_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/permission_group_container_icon"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="3dp"
+        style="@style/text_dark_bold"
+        tools:text="Location"/>
+    <TextView
+        android:id="@+id/permission_group_container_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/permission_group_container_name"
+        android:textColor="@color/dark_gray"
+        android:textSize="16sp"
+        tools:text="This permission allows apps to get your location using GPS or the network."/>
+    <LinearLayout
+        android:id="@+id/permission_group_container_card_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/permission_group_container_description"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"/>
+</RelativeLayout>

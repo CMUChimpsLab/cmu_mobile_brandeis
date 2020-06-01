@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="primary">#0D47A1</color>
+    <color name="primary_dark">#1A237E</color>
+    <color name="secondary">#80D8FF</color>
+    <color name="background_light">#fafafa</color>
+    <color name="accent">#4FC3F7</color>
+    <color name="primary_text_light">#de000000</color>
+    <color name="primary_text_dark">#ffffffff</color>
+
+    <color name="light_blue">#4797ff</color>
+
+    <color name="policy_manager_background">#F0F0F0</color>
+
+    <color name="header_blue">#1a73e8</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="dark_gray">#5A5A5A</color>
+
+    <color name="title_grey">#3F3F3F</color>
+    <color name="description_grey">#747474</color>
+
+    <color name="teal_050">#e0f2f1</color> <!-- Use with black text -->
+    <color name="teal_100">#b2dfdb</color> <!-- Use with black text -->
+    <color name="teal_200">#80cbc4</color> <!-- Use with black text -->
+    <color name="teal_300">#4db6ac</color> <!-- Use with black text -->
+    <color name="teal_400">#26a69a</color> <!-- Use with black text -->
+    <color name="teal_500">#009688</color> <!-- Use with white text -->
+    <color name="teal_600">#00897b</color> <!-- Use with white text -->
+    <color name="teal_700">#00796b</color> <!-- Use with white text -->
+    <color name="teal_800">#00695c</color> <!-- Use with white text -->
+    <color name="teal_900">#004d40</color> <!-- Use with white text -->
+    <color name="teal_a100">#a7ffeb</color> <!-- Use with black text -->
+    <color name="teal_a200">#64ffda</color> <!-- Use with black text -->
+    <color name="teal_a400">#1de9b6</color> <!-- Use with black text -->
+    <color name="teal_a700">#00bfa5</color> <!-- Use with black text -->
+
+    // Spinner and tinting colors
+    <color name="allow_color">#388E3C</color>
+    <color name="deny_color">#D32F2F</color>
+    <color name="fake_color">#1976D2</color>
+    <color name="ask_color">#757575</color>
+    <color name="default_color">#125688</color>
+
+    <!-- Colors for runtime UI popup, change to make your own -->
+    <color name="customPrimary">#98dad3</color>
+    <color name="customPrimaryDark">#098e84</color>
+    <color name="customAccent">#c5ff40</color>
+    <color name="customCenter">#ffffff</color>
+    <color name="customSwitch">#040cf7</color>
+    <color name="customSwitchActivated">#1cf704</color>
+    <color name="customBottom">#f5f2f2</color>
+
+    <color name="configureTrayColor">#fafafa</color>
+</resources>

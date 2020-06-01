@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#00555555">
+    <ImageView
+        android:id="@+id/runtime_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        tools:src="@drawable/ic_permission_location"/>
+    <TextView
+        android:id="@+id/runtime_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/runtime_icon"
+        android:layout_toEndOf="@id/runtime_icon"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        tools:text="Allow Instagram to access your Coarse Location?"
+        style="@style/runtime_title"/>
+    <TextView
+        android:id="@+id/runtime_usedfor_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/runtime_description"
+        android:layout_below="@id/runtime_description"
+        android:layout_marginTop="10dp"
+        android:text="@string/it_will_be_used_for"
+        style="@style/runtime_title"/>
+    <TextView
+        android:id="@+id/runtime_usedfor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/runtime_usedfor_header"
+        android:layout_alignStart="@id/runtime_description"
+        tools:text="Geotagging"
+        style="@style/runtime_description"/>
+    <TextView
+        android:id="@+id/runtime_because_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_alignStart="@id/runtime_description"
+        android:layout_below="@id/runtime_usedfor"
+        android:text="@string/because_colon"
+        style="@style/runtime_title"/>
+    <TextView
+        android:id="@+id/runtime_app_policy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/runtime_because_header"
+        android:layout_alignStart="@id/runtime_because_header"
+        android:layout_marginEnd="15dp"
+        tools:text="We collect your location so we can geotag images you upload to your profile."
+        style="@style/runtime_description"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/runtime_app_policy"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+        <View style="@style/divider_thin"/>
+        <Button
+            android:id="@+id/runtime_allow_once"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:onClick="allowOnce"
+            android:textColor="#438bf7"
+            android:text="@string/only_this_time"/>
+        <View style="@style/divider_thin"/>
+        <Button
+            android:id="@+id/runtime_allow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:onClick="allowPermission"
+            android:textColor="#438bf7"
+            android:text="@string/always_allow"/>
+        <View style="@style/divider_thin"/>
+        <Button
+            android:id="@+id/runtime_deny"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="denyPermission"
+            android:background="@android:color/transparent"
+            android:textColor="#438bf7"
+            android:text="@string/always_deny"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,67 @@
+"WEATHER": 
+Apps like The Weather Channel app and Accuweather will need at least a 
+little bit of personal info so they can deliver accurate weather forecasts
+and information.
+
+"INTERNAL":
+The app uses this permission to make some feature work. The data probably
+isn't going to leak from the device. An example may be something like Google
+Maps telling you when you entered a new state - "Welcome to Pennsylvania!"
+
+"GEOTAGGING":
+Attach a location to an image.
+           
+"TARGETED_ADS":
+These permission is being used to deliver ads that are catered to
+your personal tastes.
+
+"SOCIAL"
+This one and SNS (social networking services) are a little vague. I like to think
+of this one as being used directly by a social media *application* to produce
+some kind of interactive content...\
+
+"NAVIGATION"
+Maps, traveling
+
+"NEARBY-PLACES":
+Things like Yelp, which let you see what businesses, shops, events are around you.
+
+"MOBILE_ANALYTICS":
+This is where things like Flurry come into play. 
+
+"UTILITY":
+This one is also a sort of generalized purpose category.
+
+"SNS":
+Okay so this is the other sort of vague social media purpose. SNS = social networking service.
+I assume this to mean any data sharing that goes on *outside* of a social media application, such as
+calls to a Twitter API, even though you are in Google+ or something.
+
+"UNKNOWN":
+This made more sense when we used to have a loose implementation of purpose inference working. We had
+an ML algorithm determine the purpose of a data access dynamically. It is no longer in use. But basically,
+it just meant that the classifier couldn't determine why data was being accessed.
+
+"PAYMENT":
+Stuff like WeChat pay features
+
+"EMERGENCY"
+Emergency is to allow integration with emergency services.
+
+"SEARCH_ENGINE"
+I find this one to be a little strange but I guess it just means what it says. Maybe
+it sends data to a search engine, or has one locally on the device? Example: find specific
+kinds of contacts.
+
+"DEVELOPMENT_AID":
+So quite a lot of third party libraries fall under this category. This is stuff like Volley or Firebase.
+They rarely ever (if ever at all) collect personal data. The only ones that may are libraries like Crashlytics.
+
+"CONTENT_PROVIDER":
+I used to know what this meant but not sure. I think you can programmatically in Android create a shareable
+data store. I think that is what this is for.
+
+"GAME_ENGINE":
+Not too many libraries fall in this category, but examples are like Unity and FMod. Stuff strictly for gaming.
+Sensors like accelerometers or gesture detection could request data for these libraries. Although I have not come
+across this, nor do I know if sensor permissions are covered

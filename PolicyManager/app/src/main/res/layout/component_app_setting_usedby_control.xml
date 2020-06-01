@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:text="@string/Used_by"/>
+        <TextView
+            android:id="@+id/usedby_control_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:textColor="#000000"
+            tools:text="App Internal Usage"/>
+        <TextView
+            android:id="@+id/usedby_control_profile_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#B33A3A"
+            android:textStyle="italic"
+            android:visibility="gone"
+            tools:text="Set OFF by Profile"/>
+    </LinearLayout>
+    <edu.cmu.policymanager.ui.common.ConfigureSwitch
+        android:id="@+id/app_setting_usedby_control"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="0.3"/>
+</LinearLayout>

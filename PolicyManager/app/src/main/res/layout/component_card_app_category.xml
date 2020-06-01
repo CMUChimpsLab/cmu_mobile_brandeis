@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="127dp"
+    android:layout_height="150dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="2dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp"
+    card_view:cardElevation="3dp"
+    card_view:cardCornerRadius="10dp">
+    <RelativeLayout
+        android:layout_width="127dp"
+        android:layout_height="150dp">
+        <RelativeLayout
+            android:id="@+id/category_card_app_square"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp">
+            <ImageView
+                android:id="@+id/allysiqi_category_app_top_left"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_marginEnd="8dp"
+                tools:src="@drawable/android" />
+            <ImageView
+                android:id="@+id/allysiqi_category_app_top_right"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_toEndOf="@id/allysiqi_category_app_top_left"
+                android:layout_alignTop="@id/allysiqi_category_app_top_left"
+                tools:src="@drawable/android" />
+            <ImageView
+                android:id="@+id/allysiqi_category_app_bottom_left"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_below="@id/allysiqi_category_app_top_left"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                tools:src="@drawable/android" />
+            <ImageView
+                android:id="@+id/allysiqi_category_app_bottom_right"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_alignTop="@id/allysiqi_category_app_bottom_left"
+                android:layout_toEndOf="@id/allysiqi_category_app_bottom_left"
+                tools:src="@drawable/android" />
+        </RelativeLayout>
+            <TextView
+                android:id="@+id/category_card_app_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/category_card_app_square"
+                android:layout_centerHorizontal="true"
+                android:textSize="13sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                tools:text="Communication" />
+            <TextView
+                android:id="@+id/category_card_app_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/category_card_app_category"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                tools:text="14 Apps" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

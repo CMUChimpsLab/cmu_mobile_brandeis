@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/purpose_dropdown_for"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/ask_color"
+        android:text="@string/For"/>
+    <TextView
+        android:id="@+id/purpose_dropdown_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/purpose_dropdown_for"
+        android:textColor="#000000"
+        tools:text="Geotagging"/>
+    <ImageView
+        android:id="@+id/purpose_dropdown_expand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/purpose_dropdown_title"
+        android:src="@drawable/ic_keyboard_arrow_down_grey_24dp"/>
+    <ImageView
+        android:id="@+id/purpose_dropdown_collapse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/purpose_dropdown_title"
+        android:src="@drawable/ic_keyboard_arrow_up_grey_24dp"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:id="@+id/purpose_dropdown_control_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/purpose_dropdown_title"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:visibility="gone"/>
+</RelativeLayout>
