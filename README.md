@@ -25,4 +25,4 @@ The repo contains the following projects:
 
 **PhD Students**: Haojian Jin (http://haojianj.in/), Tianshi Li (https://tianshili.me)
 
-**Undergraduate Students**: Yile Liu, Yuan Jiang
+**Undergraduate Students**: Yile Liu, Yuan Jiang, Bobby Zhang
